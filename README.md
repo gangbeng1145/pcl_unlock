@@ -7,13 +7,13 @@
 
 | 文件 | 说明 |
 |---|---|
-| `pcl_unlock_web.html` | 单文件网页工具，双击即用，支持批量拖入 |
+| `index.html` | 单文件网页工具，双击即用，支持批量拖入 |
 | `pcl_download_unlock.zip` | Python 命令行版，解压后 `python pcl_download_unlock.py` |
 | `Plain Craft Launcher 2_unlocked.exe` | 已处理好的成品，可直接使用 |
 
 ## 网页版
 
-1. 双击 `pcl_unlock_web.html`
+1. 双击 `index.html`
 2. 把一个或多个 PCL exe 拖进虚线框
 3. 进度条走完，点“下载”
 4. 得到 `原文件名_unlocked.exe`
