@@ -151,6 +151,56 @@ MC 客户端构建器体积 50 MB，超过 Cloudflare Pages 的单文件 25 MiB 
 
 ---
 
+## 附：MC 客户端构建器（v1.2）
+
+Release `v1.2` 的附件 `MCBuilder_v1.2.zip` 是另一个独立作品，与 PCL 解锁无关。
+体积 50 MB，超过 Cloudflare Pages 的 25 MiB 单文件上限，因此放在 Release 里分发。
+**该 Release 仅用于文件下载**，不包含源码。
+
+### 它做什么
+
+一个不依赖启动器的 Minecraft 客户端下载 / 配置 / 打包工具。选好版本和加载器，
+它自动下载原版、依赖库、资源文件，调用官方安装器装好 Forge / OptiFine / Fabric / Quilt，
+最后打包成一个 zip。把 zip 解压出的文件夹作为 HMCL 的游戏目录，即可直接启动。
+
+### 原理
+
+**1. 版本清单**
+优先从 BMCLAPI 拉 `version_manifest.json`，失败回退 `piston-meta.mojang.com`；
+内置 920+ 版本的离线清单，断网也能列出目录。
+
+**2. 原版安装**
+按 version json 逐项下载 `client jar`、`libraries`、`assets`、`logging`，写入标准目录结构。
+
+**3. 加载器**
+- Forge：调用官方 installer 的 `--installClient`，新旧版本通吃
+- OptiFine：调用官方 Patcher 生成补丁库
+- Fabric / Quilt：读取官方 meta 生成版本 JSON
+
+**4. 下载调度**
+自动测速选源（国内优先 BMCLAPI）、线程 4/8/16/24/32、失败换源、
+SHA-1 校验、按哈希缓存、断点复用。
+
+**5. Java**
+内置 Mojang 运行时下载（8 / 16 / 17 / 21 / 25），装好自动加入 Java 列表。
+
+**6. 打包**
+输出 zip 内含 `versions` / `libraries` / `assets` 与 `使用说明.txt`，解压即用。
+
+### 技术栈
+
+Python + PySide6，PyInstaller 打成单文件 exe。
+源码结构：`app.py` / `cli.py` / `verify.py` / `core/` / `ui/`。
+
+### 已知限制
+
+- 仅 Windows 10 / 11 64 位
+- 不含 NeoForge（网络到 `maven.neoforged.net` 被阻断）
+- Forge 1.13+ 与 OptiFine 不能叠加
+- 不修改现有 `.minecraft`，所有产物在构建目录下
+
+---
+
 ## 声明
 
 仅用于处理自己持有的样本，请勿用于其它用途。
