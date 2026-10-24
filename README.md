@@ -1,5 +1,6 @@
 立即使用：https://pcl.gber.dpdns.org/
 备用网址：https://pcl-unlock.pages.dev/
+备用网址：https://gangbeng1145.github.io/pcl_unlock/
 
 # PCL 下载解锁器
 
