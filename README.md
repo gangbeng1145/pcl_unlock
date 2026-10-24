@@ -258,6 +258,12 @@ Python + PySide6，PyInstaller 打成单文件 exe。
 
 ---
 
+## 许可
+
+本项目采用 [MIT License](LICENSE)。
+
+---
+
 ## 声明
 
 仅用于处理自己持有的样本，请勿用于其它用途。
