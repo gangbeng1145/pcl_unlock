@@ -152,6 +152,59 @@ MC 客户端构建器体积 50 MB，超过 Cloudflare Pages 的单文件 25 MiB 
 
 ---
 
+## 部署流程
+
+```
+  ┌─────────────────────────────┐
+  │  本地  D:\Desktop\pcl_unlock │
+  │  index.html / *.zip / *.exe │
+  └──────────────┬──────────────┘
+                 │ git add / commit
+                 ▼
+  ┌─────────────────────────────┐
+  │  git push origin main       │
+  └──────────────┬──────────────┘
+                 │
+        ┌────────┴─────────┐
+        ▼                  ▼
+┌───────────────┐   ┌──────────────────────┐
+│ GitHub 仓库    │   │ Cloudflare Pages     │
+│ 源码 + 成品    │   │ 监听 main，自动构建   │
+└───────┬───────┘   └──────────┬───────────┘
+        │                      │
+        │                      ├─ 构建成功 → 部署静态产物
+        │                      └─ 构建失败 → 保留上次成功版本
+        │                                 │
+        ▼                                 ▼
+┌───────────────┐   ┌──────────────────────────────────┐
+│ GitHub Pages  │   │ pcl-unlock.pages.dev              │
+│ 备用入口       │   │ pcl.gber.dpdns.org  (CNAME)       │
+└───────────────┘   └──────────────────────────────────┘
+
+  大文件（> 25 MiB）
+  ─────────────────
+  不进仓库，走 GitHub Release 附件：
+  releases/download/v1.2/MCBuilder_v1.2.zip
+  页面里的 mc 链接直接指向这个地址。
+```
+
+### 步骤
+
+1. 本地改文件，`git add -A && git commit -m "..."`
+2. `git push origin main`
+3. Cloudflare Pages 检测到 `main` 有新 commit，自动拉取并构建
+4. 构建产物部署到 `pcl-unlock.pages.dev`，自定义域名 `pcl.gber.dpdns.org` 走 CNAME 生效
+5. GitHub Pages 同时提供 `gangbeng1145.github.io/pcl_unlock/` 作为备用
+6. 验证：`curl` 首页看 `const LINKS` 是否为新值
+
+### 注意
+
+- **Cloudflare Pages 单文件上限 25 MiB**，超过的附件必须走 Release，否则构建失败、站点回退到上一次成功版本
+- 构建通常 40 秒到 2 分钟；`cf-cache-status: DYNAMIC` 说明不是缓存问题，是构建没完成或失败
+- 改了 `index.html` 后以 `pcl.gber.dpdns.org` 为准，`github.io` 只是备用入口
+
+---
+
 ## 附：MC 客户端构建器（v1.2）
 
 Release `v1.2` 的附件 `MCBuilder_v1.2.zip` 是另一个独立作品，与 PCL 解锁无关。
