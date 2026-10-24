@@ -11,7 +11,7 @@
 |---|---|
 | `index.html` | 单文件网页工具，双击即用，支持批量拖入 |
 | `pcl_download_unlock.zip` | Python 命令行版，解压后 `python pcl_download_unlock.py` |
-| `Plain Craft Launcher 2_unlocked.exe` | 已处理好的成品，可直接使用 |
+| `PCL_已解锁版.exe` | 已处理好的成品，可直接使用 |
 
 ## 网页版
 
