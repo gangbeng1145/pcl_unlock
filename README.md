@@ -260,7 +260,16 @@ Python + PySide6，PyInstaller 打成单文件 exe。
 
 ## 许可
 
-本项目采用 [MIT License](LICENSE)。
+本仓库包含两类内容，适用不同许可：
+
+| 内容 | 许可 |
+|---|---|
+| `index.html`、`pcl_download_unlock.py`（本项目代码） | [MIT License](LICENSE) |
+| `PCL_已解锁版.exe`（PCL 修改版二进制） | 《[PCL 分发有限许可](LICENSE-PCL.md)》，不适用 MIT |
+
+`PCL_已解锁版.exe` 是**第三方基于龙腾猫跃的 [PCL](https://github.com/Meloong-Git/PCL) 独立修改**的产物，
+与 PCL 官方无关，名称中的「已解锁版」即为第三方修改标识。上游许可要求署名与保留许可文件，
+本仓库已按此执行：保留 `LICENSE-PCL.md` 全文，并在本 README 中注明来源。
 
 ---
 
