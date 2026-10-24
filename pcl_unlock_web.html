@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PCL 下载解锁器 · 开源工具</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjM2E3YmZmIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjNmVlN2ZmIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTUiIGZpbGw9InVybCgjZykiLz48cGF0aCBkPSJNMjAgMjloMjR2MjBhNCA0IDAgMCAxLTQgNEgyNGE0IDQgMCAwIDEtNC00eiIgZmlsbD0iIzBiMGQxMiIvPjxwYXRoIGQ9Ik0yNCAyOXYtNmE4IDggMCAwIDEgMTUuNi0yLjUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzBiMGQxMiIgc3Ryb2tlLXdpZHRoPSI1IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48Y2lyY2xlIGN4PSIzMiIgY3k9IjM5IiByPSIzLjQiIGZpbGw9IiM2ZWU3ZmYiLz48L3N2Zz4=">
+<style>
+  :root {
+    --bg: #0b0d12;
+    --panel: #141821;
+    --panel-2: #1a1f2b;
+    --border: #232936;
+    --text: #e6e9ef;
+    --muted: #8b93a7;
+    --accent: #4da3ff;
+    --accent-2: #3ddc97;
+    --danger: #ff5c7a;
+    --warn: #ffb454;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", system-ui, sans-serif;
+    background:
+      radial-gradient(1100px 520px at 50% -12%, #17253f 0%, transparent 62%),
+      var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 56px 22px 72px;
+  }
+
+  header { text-align: center; margin-bottom: 34px; }
+  header h1 {
+    font-size: 32px;
+    font-weight: 650;
+    letter-spacing: -0.02em;
+    margin: 0 0 10px;
+    background: linear-gradient(92deg, #eaf2ff 0%, #8fc2ff 55%, #6ef0c0 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  header p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 14.5px;
+    line-height: 1.7;
+  }
+
+  .drop {
+    position: relative;
+    border: 1.5px dashed #2c3547;
+    border-radius: 16px;
+    background: linear-gradient(180deg, var(--panel) 0%, #10141c 100%);
+    padding: 46px 24px;
+    text-align: center;
+    transition: border-color .18s, background .18s, transform .18s;
+    cursor: pointer;
+  }
+  .drop:hover { border-color: #3c4a63; }
+  .drop.over {
+    border-color: var(--accent);
+    background: linear-gradient(180deg, #16233a 0%, #10141c 100%);
+    transform: translateY(-1px);
+  }
+  .drop svg { width: 38px; height: 38px; opacity: .75; margin-bottom: 14px; }
+  .drop .main { font-size: 15.5px; font-weight: 560; margin: 0 0 8px; }
+  .drop .hint { font-size: 13px; color: var(--muted); margin: 0; }
+
+  .btn {
+    appearance: none;
+    border: 1px solid #2f3a4d;
+    background: #1c2330;
+    color: var(--text);
+    font: inherit;
+    font-size: 13.5px;
+    padding: 7px 16px;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: background .15s, border-color .15s;
+  }
+  .btn:hover { background: #232c3c; border-color: #3c4a63; }
+
+  .list { margin-top: 20px; display: flex; flex-direction: column; gap: 10px; }
+  .row {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 13px;
+    padding: 15px 17px;
+    animation: pop .22s ease both;
+  }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .row-head {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 11px;
+  }
+  .name {
+    font-size: 14px;
+    font-weight: 560;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    flex: 1;
+    min-width: 0;
+  }
+  .size { font-size: 12px; color: var(--muted); flex: none; }
+  .badge {
+    flex: none;
+    font-size: 11.5px;
+    padding: 3px 9px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    color: var(--muted);
+    background: #10141c;
+  }
+  .badge.ok { color: #062018; background: var(--accent-2); border-color: transparent; }
+  .badge.err { color: #2a0710; background: var(--danger); border-color: transparent; }
+  .badge.run { color: var(--accent); border-color: #274166; background: #0e1826; }
+
+  .track {
+    height: 6px;
+    border-radius: 999px;
+    background: #0d1119;
+    overflow: hidden;
+    border: 1px solid #1d2431;
+  }
+  .fill {
+    height: 100%;
+    width: 0%;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #3a7bff, #6ee7ff);
+    transition: width .32s cubic-bezier(.4,0,.2,1);
+  }
+  .fill.ok { background: linear-gradient(90deg, #22c98a, #7cf5c4); }
+  .fill.err { background: linear-gradient(90deg, #e0395c, #ff8aa1); }
+
+  .row-foot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 10px;
+    min-height: 20px;
+  }
+  .status { font-size: 12.5px; color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .status.err { color: var(--danger); }
+  .status.ok { color: var(--accent-2); }
+
+  .dl {
+    flex: none;
+    font-size: 12.5px;
+    font-weight: 560;
+    color: #04121a;
+    background: var(--accent-2);
+    border: 0;
+    border-radius: 8px;
+    padding: 7px 14px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: filter .15s;
+  }
+  .dl:hover { filter: brightness(1.08); }
+
+  .downloads { margin-top: 46px; }
+  .downloads h2 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #c8d0de;
+    margin: 0 0 14px;
+    letter-spacing: .01em;
+  }
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+  @media (max-width: 680px) { .grid { grid-template-columns: 1fr; } }
+
+  .card {
+    display: block;
+    text-decoration: none;
+    color: var(--text);
+    background: linear-gradient(180deg, var(--panel-2), var(--panel));
+    border: 1px solid var(--border);
+    border-radius: 13px;
+    padding: 16px 16px 15px;
+    transition: border-color .16s, transform .16s;
+  }
+  .card:hover { border-color: #35425a; transform: translateY(-1px); }
+  .card .t { font-size: 13.5px; font-weight: 560; margin-bottom: 5px; }
+  .card .d { font-size: 12px; color: var(--muted); line-height: 1.55; }
+  .card.pending { opacity: .55; cursor: default; }
+  .card.pending:hover { transform: none; border-color: var(--border); }
+
+  footer {
+    margin-top: 46px;
+    padding-top: 20px;
+    border-top: 1px solid #1a2029;
+    color: #5f6879;
+    font-size: 12px;
+    line-height: 1.7;
+    text-align: center;
+  }
+  footer a { color: #7fa8d8; text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>PCL 下载解锁器</h1>
+    <p>把 PCL 的 exe 拖进来，浏览器本地完成修复。<br>
+       文件不会离开你的电脑，不会被上传到任何服务器。</p>
+  </header>
+
+  <section class="drop" id="drop">
+    <input id="fileInput" type="file" accept=".exe,application/octet-stream" multiple hidden>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+         stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M12 16V4m0 0L7.5 8.5M12 4l4.5 4.5"/>
+      <path d="M4 15v3.5A2.5 2.5 0 0 0 6.5 21h11a2.5 2.5 0 0 0 2.5-2.5V15"/>
+    </svg>
+    <p class="main">拖入一个或多个 PCL exe</p>
+    <p class="hint">或 <button class="btn" id="pickBtn" type="button">选择文件</button>　·　支持批量</p>
+  </section>
+
+  <section class="list" id="list"></section>
+
+  <section class="downloads">
+    <h2>下载</h2>
+    <div class="grid">
+      <a class="card pending" id="lnkPcl" href="#">
+        <div class="t">已解锁的 PCL</div>
+        <div class="d">链接待补充</div>
+      </a>
+      <a class="card pending" id="lnkPy" href="#" data-note="ZIP 压缩包">
+        <div class="t">核心解锁工具</div>
+        <div class="d">链接待补充</div>
+      </a>
+      <a class="card pending" id="lnkMc" href="#" data-note="密码 35dx">
+        <div class="t">MC 部署器</div>
+        <div class="d">链接待补充</div>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    本工具针对特定比赛样本的兼容性修复，仅处理你本地选择的文件。<br>
+    源码开放，欢迎审阅与复用。
+  </footer>
+</div>
+
+<script>
+/* ============================================================
+   下载链接配置
+   把三个链接分别填进来即可，留空则显示“链接待补充”。
+   ============================================================ */
+const LINKS = {
+  pcl: "Plain%20Craft%20Launcher%202_unlocked.exe",
+  py:  "pcl_download_unlock.zip",
+  mc:  "https://wwbdi.lanzoum.com/ikpIK4d6ufba"
+};
+
+/* ============================================================
+   字节特征（与 Python 工具完全一致）
+   ============================================================ */
+function hex(s) {
+  const out = new Uint8Array(s.length / 2);
+  for (let i = 0; i < out.length; i++) out[i] = parseInt(s.substr(i * 2, 2), 16);
+  return out;
+}
+
+// 原始片段：ldstr "关闭下载" … newobj LoaderTask（48 字节）
+const SIG_OLD = hex(
+  "72334701707efb0900042c077efb0900042b167ef9090004" +
+  "fe0667140006738d05000a2580fb0900041418738e05000a"
+);
+
+// 修复片段：ldsfld DlClientListLoader + 43 个 nop
+const SIG_NEW = new Uint8Array(48);
+SIG_NEW.set([0x7e, 0x0f, 0x04, 0x00, 0x04], 0);
+
+// 已修复特征：ldnull + ldsfld DlClientListLoader + 42 个 nop
+const SIG_DONE = new Uint8Array(48);
+SIG_DONE.set([0x14, 0x7e, 0x0f, 0x04, 0x00, 0x04], 0);
+
+/* ============================================================
+   工具函数
+   ============================================================ */
+function indexOfBytes(hay, needle) {
+  const n = needle.length, first = needle[0], end = hay.length - n;
+  outer:
+  for (let i = 0; i <= end; i++) {
+    if (hay[i] !== first) continue;
+    for (let j = 1; j < n; j++) {
+      if (hay[i + j] !== needle[j]) continue outer;
+    }
+    return i;
+  }
+  return -1;
+}
+
+function isPE(buf) {
+  if (buf.length < 0x40) return false;
+  if (buf[0] !== 0x4d || buf[1] !== 0x5a) return false;           // MZ
+  const pe = buf[0x3c] | (buf[0x3d] << 8) | (buf[0x3e] << 16) | (buf[0x3f] << 24);
+  if (pe + 4 > buf.length) return false;
+  return buf[pe] === 0x50 && buf[pe + 1] === 0x45 && buf[pe + 2] === 0 && buf[pe + 3] === 0;
+}
+
+function humanSize(n) {
+  if (n < 1024) return n + " B";
+  if (n < 1024 * 1024) return (n / 1024).toFixed(1) + " KB";
+  return (n / 1024 / 1024).toFixed(2) + " MB";
+}
+
+function outName(name) {
+  const base = name.replace(/\.exe$/i, "");
+  return base.endsWith("_unlocked") ? base + ".exe" : base + "_unlocked.exe";
+}
+
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+
+async function sha256(buf) {
+  try {
+    const h = await crypto.subtle.digest("SHA-256", buf);
+    return [...new Uint8Array(h)].map(b => b.toString(16).padStart(2, "0")).join("");
+  } catch {
+    return null;
+  }
+}
+
+/* ============================================================
+   UI
+   ============================================================ */
+const list = document.getElementById("list");
+
+function addRow(file) {
+  const row = document.createElement("div");
+  row.className = "row";
+  row.innerHTML = `
+    <div class="row-head">
+      <span class="name"></span>
+      <span class="size">${humanSize(file.size)}</span>
+      <span class="badge">等待</span>
+    </div>
+    <div class="track"><div class="fill"></div></div>
+    <div class="row-foot">
+      <span class="status">排队中…</span>
+    </div>`;
+  row.querySelector(".name").textContent = file.name;
+  list.appendChild(row);
+  return {
+    el: row,
+    badge: row.querySelector(".badge"),
+    fill: row.querySelector(".fill"),
+    status: row.querySelector(".status"),
+    foot: row.querySelector(".row-foot")
+  };
+}
+
+function setProgress(r, pct, text, cls) {
+  r.fill.style.width = pct + "%";
+  if (cls) r.fill.className = "fill " + cls;
+  if (text !== undefined) r.status.textContent = text;
+}
+
+function setBadge(r, text, cls) {
+  r.badge.textContent = text;
+  r.badge.className = "badge" + (cls ? " " + cls : "");
+}
+
+function addDownload(r, url, filename, note) {
+  const a = document.createElement("a");
+  a.className = "dl";
+  a.href = url;
+  a.download = filename;
+  a.textContent = "下载";
+  a.title = note || filename;
+  r.foot.appendChild(a);
+}
+
+/* ============================================================
+   处理单个文件
+   ============================================================ */
+async function processFile(file) {
+  const r = addRow(file);
+  try {
+    setBadge(r, "读取中", "run");
+    setProgress(r, 8, "读取文件…");
+    await sleep(40);
+
+    const buf = new Uint8Array(await file.arrayBuffer());
+    setProgress(r, 28, "校验 PE 结构…");
+    await sleep(30);
+
+    if (!isPE(buf)) {
+      throw new Error("不是有效的 PE 文件（.exe）");
+    }
+
+    setProgress(r, 52, "定位解锁点…");
+    await sleep(40);
+
+    const idx = indexOfBytes(buf, SIG_OLD);
+    let state;
+
+    if (idx >= 0) {
+      setProgress(r, 74, "写入补丁…");
+      await sleep(50);
+      buf.set(SIG_NEW, idx);
+      state = "ok";
+    } else if (indexOfBytes(buf, SIG_DONE) >= 0) {
+      state = "done";
+    } else {
+      throw new Error("未找到目标特征，可能不是该样本");
+    }
+
+    setProgress(r, 90, "生成文件…");
+    await sleep(40);
+
+    const blob = new Blob([buf], { type: "application/octet-stream" });
+    const url = URL.createObjectURL(blob);
+    const filename = outName(file.name);
+    const hash = await sha256(buf);
+
+    if (state === "ok") {
+      setBadge(r, "已解锁", "ok");
+      setProgress(r, 100, "完成 · " + humanSize(buf.length) + (hash ? " · " + hash.slice(0, 16) + "…" : ""), "ok");
+      r.status.className = "status ok";
+    } else {
+      setBadge(r, "已是解锁状态", "ok");
+      setProgress(r, 100, "无需处理，可直接下载原文件", "ok");
+      r.status.className = "status ok";
+    }
+
+    addDownload(r, url, filename, hash || filename);
+  } catch (e) {
+    setBadge(r, "失败", "err");
+    setProgress(r, 100, e.message || String(e), "err");
+    r.status.className = "status err";
+  }
+}
+
+/* ============================================================
+   队列（串行，避免大文件同时占内存）
+   ============================================================ */
+let queue = Promise.resolve();
+function enqueue(files) {
+  const arr = [...files].filter(f => f && f.size > 0);
+  if (!arr.length) return;
+  queue = queue.then(async () => {
+    for (const f of arr) {
+      await processFile(f);
+    }
+  });
+}
+
+/* ============================================================
+   事件绑定
+   ============================================================ */
+const drop = document.getElementById("drop");
+const input = document.getElementById("fileInput");
+const pickBtn = document.getElementById("pickBtn");
+
+pickBtn.addEventListener("click", e => {
+  e.stopPropagation();
+  input.click();
+});
+drop.addEventListener("click", () => input.click());
+
+input.addEventListener("change", () => {
+  enqueue(input.files);
+  input.value = "";
+});
+
+["dragenter", "dragover"].forEach(ev =>
+  drop.addEventListener(ev, e => {
+    e.preventDefault();
+    e.stopPropagation();
+    drop.classList.add("over");
+  })
+);
+["dragleave", "drop"].forEach(ev =>
+  drop.addEventListener(ev, e => {
+    e.preventDefault();
+    e.stopPropagation();
+    if (ev === "dragleave" && drop.contains(e.relatedTarget)) return;
+    drop.classList.remove("over");
+  })
+);
+drop.addEventListener("drop", e => {
+  if (e.dataTransfer && e.dataTransfer.files.length) enqueue(e.dataTransfer.files);
+});
+
+/* 防止把文件拖到页面其他位置时浏览器直接打开 */
+window.addEventListener("dragover", e => e.preventDefault());
+window.addEventListener("drop", e => e.preventDefault());
+
+/* ============================================================
+   下载链接填充
+   ============================================================ */
+(function initLinks() {
+  const map = [
+    ["lnkPcl", LINKS.pcl],
+    ["lnkPy",  LINKS.py],
+    ["lnkMc",  LINKS.mc]
+  ];
+  for (const [id, url] of map) {
+    const el = document.getElementById(id);
+    if (!el) continue;
+    if (url) {
+      el.href = url;
+      el.target = "_blank";
+      el.rel = "noopener";
+      el.classList.remove("pending");
+      const note = el.dataset.note;
+      el.querySelector(".d").textContent = note ? "点击下载 · " + note : "点击下载";
+    } else {
+      el.href = "javascript:void(0)";
+      el.addEventListener("click", e => e.preventDefault());
+    }
+  }
+})();
+</script>
+</body>
+</html>
