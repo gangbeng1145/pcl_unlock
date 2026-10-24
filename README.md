@@ -1,6 +1,6 @@
 立即使用：https://pcl.gber.dpdns.org/
 
-﻿# PCL 下载解锁器
+# PCL 下载解锁器
 
 把 PCL 的 exe 拖进网页，浏览器本地完成修复，输出 `*_unlocked.exe`。
 整个过程不联网、不上传，文件只在你的机器内存里过一遍。
