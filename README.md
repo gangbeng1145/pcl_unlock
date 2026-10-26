@@ -123,6 +123,37 @@ New LoaderTask(Of String, DlClientListResult)(
 >
 > MC 版本列表、资源下载、加载器安装、Mod 搜索、登录都不受影响。
 
+## 2.99.0.1 的额外隐藏
+
+`2.99.0.1` 比 `2.99.0.0` 多藏了一层。`PageDownloadLeft` 的构造函数里写着：
+
+```vb
+ItemInstall.Visibility = Collapsed   ' 隐藏左侧「安装」项
+LabResource.Visibility = Collapsed
+PageID = 2                            ' 默认打开 Mod 子页
+ItemMod.Checked = True                ' 构造函数末尾选中 Mod
+```
+
+所以即使解锁了 Loader，下载页左侧也**看不到「安装」那一项**，自然没有原版 MC 列表。
+
+恢复方式（三处字节，仅 `2.99.0.1` 需要）：
+
+| 偏移 | 原值 | 新值 | 作用 |
+|---|---|---|---|
+| `0x62E05` | `ldc.i4.2` | `ldc.i4.0` | `ItemInstall` 可见 |
+| `0x62E18` | `ldc.i4.2` | `ldc.i4.0` | 默认 `PageID` = Install |
+| `0x62E1F` | `get_ItemMod` | `get_ItemInstall` | 构造函数末尾选中 Install |
+
+改完反汇编：
+
+```
+IL_0019: ldc.i4.0        ← ItemInstall.Visibility = Visible
+IL_002C: ldc.i4.0        ← PageID = Install
+IL_0033: get_ItemInstall ← 选中安装项
+```
+
+`2.99.0.0` 不需要这一步——它的构造函数只有 20 字节，没有隐藏逻辑。
+
 ## 补丁
 
 只改 `LoaderInit` 里的 48 字节：

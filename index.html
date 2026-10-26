@@ -240,9 +240,13 @@ const VERSIONS = {
   },
   "2.99.0.1": {
     sig: hex("72754801707efc0900042c077efc0900042b167efa090004fe0669140006738d05000a2580fc0900041418738e05000a"),
-    btns: [0x6223A, 0x68C3C]
+    btns: [0x6223A, 0x68C3C],
+    install: { visibility: 0x62E05, pageId: 0x62E18, select: 0x62E1F }
   }
 };
+
+const INSTALL_OLD_TOK = [0x6f, 0x81, 0x0c, 0x00, 0x06];
+const INSTALL_NEW_TOK = [0x6f, 0x7d, 0x0c, 0x00, 0x06];
 
 const SIG_NEW = new Uint8Array(48);
 SIG_NEW.set([0x7e, 0x0f, 0x04, 0x00, 0x04], 0);
@@ -414,6 +418,16 @@ async function processFile(file) {
     await sleep(50);
     const off = indexOfBytes(buf, VERSIONS[ver].sig);
     buf.set(SIG_NEW, off);
+
+    const inst = VERSIONS[ver].install;
+    if (inst) {
+      for (const key of ["visibility", "pageId"]) {
+        if (buf[inst[key]] === 0x18) buf[inst[key]] = 0x16;
+      }
+      let same = true;
+      for (let i = 0; i < 5; i++) if (buf[inst.select + i] !== INSTALL_OLD_TOK[i]) same = false;
+      if (same) buf.set(INSTALL_NEW_TOK, inst.select);
+    }
 
     let extra = "";
     if (document.getElementById("optDecentralize").checked) {
