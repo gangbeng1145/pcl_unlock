@@ -1,0 +1,414 @@
+20:48:05.740 I <4 · Logger> [Logger] PclLogger 日志初始化结束
+20:48:05.763 I [Application] 程序版本：正式版 2.99.0.0 (413)
+20:48:05.763 I [Application] 识别码：CF2B-A144-4B8A-4D57
+20:48:05.763 I [Application] 程序路径：D:\Desktop\pcl_unlock\PCL_去中心化版.exe
+20:48:05.763 I [Application] 系统编码：gb2312 (936, GBK=True)
+20:48:05.763 I [Application] 管理员权限：False
+20:48:05.763 I [Application] 第一阶段加载用时：49 ms
+20:48:05.911 I [FormMain] 全新的 PCL，使用新的版本隔离默认值
+20:48:05.920 I [ModSecret] 刷新主题：0
+20:48:05.955 I [ModLoader] 加载器 LoaderTask`2 Minecraft Folder List 状态改变：Loading
+20:48:05.956 I [FormMain] 第二阶段加载用时：186 ms
+20:48:05.961 I <5 · L/Minecraft Folder List> [ModLoader] 加载器 LoaderTask`2 Minecraft Folder List 状态改变：Finished
+20:48:06.088 I [FormMain] 从设置更新背景图片与标题栏样式
+20:48:06.117 I [FormMain] 窗口已置顶，位置：(830, 445), 900 x 550
+20:48:06.120 I <7 · Animation> [ModAnimation] 动画线程开始
+20:48:06.120 I [FormMain] 第三阶段加载用时：35 ms
+20:48:06.129 I <11 · Version Check> [ModMinecraft] 当前选择的 Minecraft 文件夹：D:\Desktop\.minecraft\
+20:48:06.155 I [ModLoader] 加载器 LoaderTask`2 Loader Skin Ms 状态改变：Loading
+20:48:06.159 I <12 · L/Loader Skin Ms> [ModLoader] 加载器 LoaderTask`2 Loader Skin Ms 状态改变：Finished
+20:48:06.182 I [PageLaunchRight] 实例化：清空主页 UI，来源为空
+20:48:06.193 I [MySkin] 载入头像成功：Loader Skin Ms
+20:48:06.285 I <9 · 初始化> [ModJava] 共有 4 个可用的 Java：
+20:48:06.285 I <9 · 初始化> [ModJava] - Java 21 (21.0.7.0)：C:\Users\********\AppData\Roaming\.hmcl\java\windows-x86_64\mojang-java-runtime-delta\bin\
+20:48:06.285 I <9 · 初始化> [ModJava] - Java 17 (17.0.15.0)：C:\Users\********\AppData\Roaming\.hmcl\java\windows-x86_64\mojang-java-runtime-beta\bin\
+20:48:06.285 I <9 · 初始化> [ModJava] - Java 25 (25.0.3.0)：C:\Program Files\Microsoft\jdk-25.0.3.9-hotspot\bin\
+20:48:06.285 I <9 · 初始化> [ModJava] - Java 17 (17.0.4.0)：D:\Desktop\jre\bin\
+20:48:06.354 I [ModMinecraft] 当前选择的 Minecraft 版本：D:\Desktop\.minecraft\versions\1.20.1-Fabric1\
+20:48:06.356 I [PageLaunchLeft] 启动按钮：Minecraft 版本：D:\Desktop\.minecraft\versions\1.20.1-Fabric1\
+20:48:06.359 I [ModLoader] 加载器 LoaderTask`2 登录 状态改变：Loading
+20:48:06.360 I <10 · L/登录> [ModLaunch] 登录加载已开始
+20:48:06.362 I <10 · L/登录> [ModLoader] 加载器 LoaderTask`2 Loader Login Ms 状态改变：Loading
+20:48:06.363 I <13 · L/Loader Login Ms> [ModLaunch] 登录方式：正版（Asteroid111402）
+20:48:06.364 I <13 · L/Loader Login Ms> [ModLaunch] 无需登录，AccessToken 尚未过期
+20:48:06.364 I <13 · L/Loader Login Ms> [ModLaunch] 微软登录结束，AccessToken 将在 2026/10/26 19:46:08 过期
+20:48:06.364 I <13 · L/Loader Login Ms> [ModLoader] 加载器 LoaderTask`2 Loader Login Ms 状态改变：Finished
+20:48:06.386 I <10 · L/登录> [ModLaunch] 登录加载已结束
+20:48:06.386 I <10 · L/登录> [ModLoader] 加载器 LoaderTask`2 登录 状态改变：Finished
+20:48:06.403 I <9 · 初始化> [ModLoader] 加载器 LoaderTask`2 DlClientList Mojang 状态改变：Loading
+20:48:06.407 I <9 · 初始化> [ModLoader] 加载器 LoaderTask`2 PCL 配置更新 状态改变：Loading
+20:48:06.408 I <16 · TryClearTaskTemp> [ModMain] 开始清理任务缓存文件夹
+20:48:06.409 I <14 · L/DlClientList Mojang> [ModNet] 发起网络请求（GET，https://launchermeta.mojang.com/mc/game/version_manifest.json），最大超时 10000
+20:48:06.409 I <16 · TryClearTaskTemp> [ModMain] 已清理任务缓存文件夹
+20:48:06.409 I <17 · Telemetry> [ModMain] 匿名数据上报：启动
+20:48:06.414 I <15 · L/PCL 配置更新> [ModNet] 发起网络请求（GET，https://127.0.0.1:1_____________________________/notice.cfg{CDN}），最大超时 10000
+20:48:06.441 W <17 · Telemetry> [ModMain] 匿名数据上报失败：网络请求出现意外异常（GET, https://127.0.0.1:1__________________/track?topic_id=pcl-remote-1253424809&Event=%E5%90%AF%E5%8A%A8）
+20:48:06.441 W <17 · Telemetry> [ModMain]    在 PCL.ModNet.SendRequest
+20:48:06.441 W <17 · Telemetry> [ModMain]    在 PCL.ModNet.NetRequestByClient
+20:48:06.441 W <17 · Telemetry> [ModMain]    在 PCL.ModMain._Closure$__78-0._Lambda$__0
+20:48:06.441 W <17 · Telemetry> [ModMain] → 无效的 URI: 指定的端口无效。
+20:48:06.441 W <17 · Telemetry> [ModMain]    在 System.Uri.CreateThis
+20:48:06.441 W <17 · Telemetry> [ModMain]    在 System.Net.Http.HttpRequestMessage..ctor
+20:48:06.441 W <17 · Telemetry> [ModMain]    在 PCL.ModNet.SendRequest
+20:48:06.441 W <17 · Telemetry> [ModMain]    错误类型：System.UriFormatException
+20:48:06.442 W <15 · L/PCL 配置更新> [ModNet] 网络请求失败（GET，https://127.0.0.1:1_____________________________/notice.cfg{CDN}）：网络请求出现意外异常（GET, https://127.0.0.1:1_____________________________/notice.cfg?sign=1792932486-4ae81495-0-691d200f37cd1a19c171ff56994e545f）
+20:48:06.442 W <15 · L/PCL 配置更新> [ModNet]    在 PCL.ModNet.SendRequest
+20:48:06.442 W <15 · L/PCL 配置更新> [ModNet]    在 PCL.ModNet.NetRequestByClient
+20:48:06.442 W <15 · L/PCL 配置更新> [ModNet] → 无效的 URI: 指定的端口无效。
+20:48:06.442 W <15 · L/PCL 配置更新> [ModNet]    在 System.Uri.CreateThis
+20:48:06.442 W <15 · L/PCL 配置更新> [ModNet]    在 System.Net.Http.HttpRequestMessage..ctor
+20:48:06.442 W <15 · L/PCL 配置更新> [ModNet]    在 PCL.ModNet.SendRequest
+20:48:06.442 W <15 · L/PCL 配置更新> [ModNet]    错误类型：System.UriFormatException
+20:48:06.840 I [FormMain] DPI：96，系统版本：Microsoft Windows NT 10.0.26200.0，PCL 位置：D:\Desktop\pcl_unlock\PCL_去中心化版.exe
+20:48:06.950 I <15 · L/PCL 配置更新> [ModNet] 发起网络请求（GET，https://127.0.0.1:1_____________________________/notice.cfg{CDN}），最大超时 30000
+20:48:06.950 W <15 · L/PCL 配置更新> [ModNet] 网络请求失败（GET，https://127.0.0.1:1_____________________________/notice.cfg{CDN}）：网络请求出现意外异常（GET, https://127.0.0.1:1_____________________________/notice.cfg?sign=1792932487-6aafe9d1-0-630d6515b9737094751033aa7fb641b2）
+20:48:06.950 W <15 · L/PCL 配置更新> [ModNet]    在 PCL.ModNet.SendRequest
+20:48:06.950 W <15 · L/PCL 配置更新> [ModNet]    在 PCL.ModNet.NetRequestByClient
+20:48:06.950 W <15 · L/PCL 配置更新> [ModNet] → 无效的 URI: 指定的端口无效。
+20:48:06.950 W <15 · L/PCL 配置更新> [ModNet]    在 System.Uri.CreateThis
+20:48:06.950 W <15 · L/PCL 配置更新> [ModNet]    在 System.Net.Http.HttpRequestMessage..ctor
+20:48:06.950 W <15 · L/PCL 配置更新> [ModNet]    在 PCL.ModNet.SendRequest
+20:48:06.950 W <15 · L/PCL 配置更新> [ModNet]    错误类型：System.UriFormatException
+20:48:06.950 W <15 · L/PCL 配置更新> [ModSecret] 获取 PCL 服务器状态失败：网络请求出现意外异常（GET, https://127.0.0.1:1_____________________________/notice.cfg?sign=1792932486-4ae81495-0-691d200f37cd1a19c171ff56994e545f）
+20:48:06.950 W <15 · L/PCL 配置更新> [ModSecret]    在 PCL.ModNet.NetRequestByClientRetry
+20:48:06.950 W <15 · L/PCL 配置更新> [ModSecret]    在 PCL.ModSecret.ServerSub
+20:48:06.950 W <15 · L/PCL 配置更新> [ModSecret] → 无效的 URI: 指定的端口无效。
+20:48:06.950 W <15 · L/PCL 配置更新> [ModSecret]    在 System.Uri.CreateThis
+20:48:06.950 W <15 · L/PCL 配置更新> [ModSecret]    在 System.Net.Http.HttpRequestMessage..ctor
+20:48:06.950 W <15 · L/PCL 配置更新> [ModSecret]    在 PCL.ModNet.SendRequest
+20:48:06.950 W <15 · L/PCL 配置更新> [ModSecret]    错误类型：System.UriFormatException
+20:48:06.950 I <15 · L/PCL 配置更新> [ModLoader] 加载器 LoaderTask`2 PCL 配置更新 状态改变：Finished
+20:48:07.467 I <14 · L/DlClientList Mojang> [ModDownload] Mojang 官方源加载耗时：1060ms，可优先使用官方源
+20:48:07.468 I <14 · L/DlClientList Mojang> [ModLoader] 加载器 LoaderTask`2 DlClientList Mojang 状态改变：Finished
+20:48:08.175 I [MyRadioButton] 按下单选按钮：下载
+20:48:08.258 I <17 · ForgeRecommendedRefresh> [ModDownloadLib] 刷新 Forge 推荐版本缓存开始
+20:48:08.258 I <17 · ForgeRecommendedRefresh> [ModNet] 发起网络请求（GET，https://bmclapi2.bangbang93.com/forge/promos），最大超时 10000
+20:48:08.258 I [ModLoader] 加载器 LoaderTask`2 DlClientList Main 状态改变：Loading
+20:48:08.265 I <16 · L/DlClientList Main> [ModLoader] 加载器 LoaderTask`2 DlClientList Mojang 状态改变：Loading
+20:48:08.265 I <26 · L/DlClientList Mojang> [ModNet] 发起网络请求（GET，https://launchermeta.mojang.com/mc/game/version_manifest.json），最大超时 10000
+20:48:08.265 I [FormMain] 切换主要页面：Download, -1
+20:48:08.275 I <17 · ForgeRecommendedRefresh> [ModDownloadLib] 刷新 Forge 推荐版本缓存成功
+20:48:08.276 I <26 · L/DlClientList Mojang> [ModLoader] 加载器 LoaderTask`2 DlClientList Mojang 状态改变：Finished
+20:48:08.325 I [ModLoader] 加载器 LoaderTask`2 DlOptiFineList Main 状态改变：Loading
+20:48:08.326 I [ModLoader] 加载器 LoaderTask`2 DlLiteLoaderList Main 状态改变：Loading
+20:48:08.327 I <16 · L/DlClientList Main> [ModLoader] 加载器 LoaderTask`2 DlClientList Main 状态改变：Finished
+20:48:08.328 I [ModLoader] 加载器 LoaderTask`2 DlFabricList Main 状态改变：Loading
+20:48:08.328 I <17 · L/DlOptiFineList Main> [ModLoader] 加载器 LoaderTask`2 DlOptiFineList Official 状态改变：Loading
+20:48:08.329 I [ModLoader] 加载器 LoaderTask`2 DlNeoForgeList Main 状态改变：Loading
+20:48:08.330 I <14 · L/DlLiteLoaderList Main> [ModLoader] 加载器 LoaderTask`2 DlLiteLoaderList Official 状态改变：Loading
+20:48:08.331 I <40 · L/DlOptiFineList Official> [ModNet] 发起网络请求（GET，https://optifine.net/downloads），最大超时 10000
+20:48:08.331 I <39 · L/DlFabricList Main> [ModLoader] 加载器 LoaderTask`2 DlFabricList Official 状态改变：Loading
+20:48:08.331 I <42 · L/DlLiteLoaderList Official> [ModNet] 发起网络请求（GET，https://dl.liteloader.com/versions/versions.json），最大超时 10000
+20:48:08.331 I <43 · L/DlFabricList Official> [ModNet] 发起网络请求（GET，https://meta.fabricmc.net/v2/versions），最大超时 10000
+20:48:08.333 I <41 · L/DlNeoForgeList Main> [ModLoader] 加载器 LoaderTask`2 DlNeoForgeList Official 状态改变：Loading
+20:48:08.334 I <47 · L/DlNeoForgeList Official> [ModNet] 发起网络请求（GET，https://maven.neoforged.net/api/maven/versions/releases/net/neoforged/neoforge），最大超时 10000
+20:48:09.169 I <42 · L/DlLiteLoaderList Official> [ModLoader] 加载器 LoaderTask`2 DlLiteLoaderList Official 状态改变：Finished
+20:48:09.175 I [MyRadioButton] 按下单选按钮：设置
+20:48:09.176 I <14 · L/DlLiteLoaderList Main> [ModLoader] 加载器 LoaderTask`2 DlLiteLoaderList Main 状态改变：Finished
+20:48:09.218 I [FormMain] 切换主要页面：Setup, -1
+20:48:09.339 I [ModLoader] 加载器 LoaderTask`2 Loader Skin Legacy 状态改变：Loading
+20:48:09.341 I <49 · L/Loader Skin Legacy> [ModLoader] 加载器 LoaderTask`2 Loader Skin Legacy 状态改变：Finished
+20:48:09.720 I <43 · L/DlFabricList Official> [ModLoader] 加载器 LoaderTask`2 DlFabricList Official 状态改变：Finished
+20:48:09.734 I <39 · L/DlFabricList Main> [ModLoader] 加载器 LoaderTask`2 DlFabricList Main 状态改变：Finished
+20:48:09.754 I <40 · L/DlOptiFineList Official> [ModLoader] 加载器 LoaderTask`2 DlOptiFineList Official 状态改变：Finished
+20:48:09.766 I <17 · L/DlOptiFineList Main> [ModLoader] 加载器 LoaderTask`2 DlOptiFineList Main 状态改变：Finished
+20:48:11.087 I [MyRadioButton] 按下单选按钮：更多
+20:48:11.099 I [ModLoader] 加载器 LoaderTask`2 Help Page 状态改变：Loading
+20:48:11.100 I [FormMain] 切换主要页面：Other, -1
+20:48:11.103 I <51 · L/Help Page> [ModMain] 已扫描 PCL 文件夹下的帮助文件，目前总计 0 条
+20:48:11.104 I <51 · L/Help Page> [ModMain] 已扫描缓存文件夹下的帮助文件，目前总计 40 条
+20:48:11.153 I <51 · L/Help Page> [ModLoader] 加载器 LoaderTask`2 Help Page 状态改变：Finished
+20:48:14.409 I [MyCard] 展开卡片：Minecraft
+20:48:14.642 I <41 · L/DlNeoForgeList Main> [ModLoader] 加载器 LoaderTask`2 DlNeoForgeList Bmclapi 状态改变：Loading
+20:48:14.642 I <50 · L/DlNeoForgeList Bmclapi> [ModNet] 发起网络请求（GET，https://bmclapi2.bangbang93.com/neoforge/meta/api/maven/details/releases/net/neoforged/neoforge），最大超时 10000
+20:48:14.771 I <50 · L/DlNeoForgeList Bmclapi> [ModNet] 发起网络请求（GET，https://bmclapi2.bangbang93.com/neoforge/meta/api/maven/details/releases/net/neoforged/forge），最大超时 10000
+20:48:14.814 I <50 · L/DlNeoForgeList Bmclapi> [ModLoader] 加载器 LoaderTask`2 DlNeoForgeList Bmclapi 状态改变：Finished
+20:48:14.815 I <41 · L/DlNeoForgeList Main> [ModLoader] 加载器 LoaderTask`2 DlNeoForgeList Official 状态改变：Canceled
+20:48:14.815 I <41 · L/DlNeoForgeList Main> [ModLoader] 加载器 LoaderTask`2 DlNeoForgeList Main 状态改变：Finished
+20:48:14.816 I <47 · L/DlNeoForgeList Official> [ModNet] 操作已取消（网络请求失败（GET，https://maven.neoforged.net/api/maven/versions/releases/net/neoforged/neoforge））
+20:48:14.816 I <47 · L/DlNeoForgeList Official> [ModLoader] 操作已取消（加载线程 DlNeoForgeList Official 已取消，当前已完成 100%）
+20:48:15.901 I [MyCard] 展开卡片：百科
+20:48:16.915 I [MyCard] 展开卡片：启动器
+20:48:18.587 I [MyCard] 展开卡片：个性化
+20:48:21.146 I [MyListItem] 按下单选列表项：关于与鸣谢
+20:48:28.250 I [MyRadioButton] 按下单选按钮：下载
+20:48:28.251 I [FormMain] 切换主要页面：Download, -1
+20:48:29.217 I [MyRadioButton] 按下单选按钮：启动
+20:48:29.217 I [FormMain] 切换主要页面：Launch, -1
+20:48:30.182 I [MyRadioButton] 按下单选按钮：下载
+20:48:30.182 I [FormMain] 切换主要页面：Download, -1
+20:48:34.392 I [MyCard] 展开卡片：预览版
+20:49:08.608 I [ModLoader] 加载器 LoaderTask`2 DlForgeVersion 26.3-rc-3 状态改变：Loading
+20:49:08.609 I [ModLoader] 加载器 LoaderTask`2 Fabric API List Loader 状态改变：Loading
+20:49:08.609 I [ModLoader] 加载器 LoaderTask`2 OptiFabric List Loader 状态改变：Loading
+20:49:08.609 I [MyListItem] 按下单击列表项：26.3-rc-3
+20:49:08.613 I <65 · L/DlForgeVersion 26.3-rc-3> [ModLoader] 加载器 LoaderTask`2 DlForgeVersion Official 状态改变：Loading
+20:49:08.622 I <68 · L/DlForgeVersion Official> [ModLoader] 加载器 LoaderDownload 源码获取 2424# 状态改变：Loading
+20:49:08.624 I <66 · L/Fabric API List Loader> [ModNet] 发起网络请求（GET，https://api.modrinth.com/v2/project/fabric-api），最大超时 20000
+20:49:08.624 I <67 · L/OptiFabric List Loader> [ModNet] 发起网络请求（GET，https://api.curseforge.com/v1/mods/322385），最大超时 10000
+20:49:08.629 I <69 · L/下载 2426> [ModNet] 开始清理下载缓存
+20:49:08.629 I <69 · L/下载 2426> [ModNet] 下载缓存已清理
+20:49:08.674 I <25 · 下载 2426/2425/2431#> [ModNet] download.txt：开始，起始点 0，https://files.minecraftforge.net/maven/net/minecraftforge/forge/index_26.3_rc_3.html
+20:49:09.327 I <67 · L/OptiFabric List Loader> [ResourceVersion] 开始获取项目版本列表：322385
+20:49:09.327 I <67 · L/OptiFabric List Loader> [ModNet] 发起网络请求（GET，https://api.curseforge.com/v1/mods/322385/files?pageSize=10000），最大超时 10000
+20:49:09.846 I <67 · L/OptiFabric List Loader> [ModLoader] 加载器 LoaderTask`2 OptiFabric List Loader 状态改变：Finished
+20:49:09.950 I <25 · 下载 2426/2425/2431#> [ModNet] download.txt：出错：错误码 NotFound (404)，https://files.minecraftforge.net/maven/net/minecraftforge/forge/index_26.3_rc_3.html
+20:49:09.950 I <25 · 下载 2426/2425/2431#> [ModNet]    在 PCL.ModNet.NetFile.Thread
+20:49:09.950 I <25 · 下载 2426/2425/2431#> [ModNet]    错误类型：MeloongCore.HttpRequestCodeException
+20:49:09.954 I <25 · 下载 2426/2425/2431#> [ModNet] download.txt：下载源被禁用（0，Range 问题：False）：https://files.minecraftforge.net/maven/net/minecraftforge/forge/index_26.3_rc_3.html
+20:49:09.954 W <25 · 下载 2426/2425/2431#> [ModNet] 下载源 0 已被禁用：错误码 NotFound (404)，https://files.minecraftforge.net/maven/net/minecraftforge/forge/index_26.3_rc_3.html
+20:49:09.954 W <25 · 下载 2426/2425/2431#> [ModNet]    在 PCL.ModNet.NetFile.Thread
+20:49:09.954 W <25 · 下载 2426/2425/2431#> [ModNet]    错误类型：MeloongCore.HttpRequestCodeException
+20:49:09.954 W <25 · 下载 2426/2425/2431#> [ModNet] download.txt：文件下载失败，正在自动重试……
+20:49:09.973 I <75 · 下载 2426/2425/2443#> [ModNet] download.txt：开始，起始点 0，https://files.minecraftforge.net/maven/net/minecraftforge/forge/index_26.3_rc_3.html
+20:49:11.209 I <75 · 下载 2426/2425/2443#> [ModNet] download.txt：出错：错误码 NotFound (404)，https://files.minecraftforge.net/maven/net/minecraftforge/forge/index_26.3_rc_3.html
+20:49:11.209 I <75 · 下载 2426/2425/2443#> [ModNet]    在 PCL.ModNet.NetFile.Thread
+20:49:11.209 I <75 · 下载 2426/2425/2443#> [ModNet]    错误类型：MeloongCore.HttpRequestCodeException
+20:49:11.209 I <75 · 下载 2426/2425/2443#> [ModNet] download.txt：下载源被禁用（0，Range 问题：False）：https://files.minecraftforge.net/maven/net/minecraftforge/forge/index_26.3_rc_3.html
+20:49:11.209 W <75 · 下载 2426/2425/2443#> [ModNet] 单线程下载源 0 已被禁用：错误码 NotFound (404)，https://files.minecraftforge.net/maven/net/minecraftforge/forge/index_26.3_rc_3.html
+20:49:11.209 W <75 · 下载 2426/2425/2443#> [ModNet]    在 PCL.ModNet.NetFile.Thread
+20:49:11.209 W <75 · 下载 2426/2425/2443#> [ModNet]    错误类型：MeloongCore.HttpRequestCodeException
+20:49:11.209 I <75 · 下载 2426/2425/2443#> [ModNet] download.txt：已无可用下载源，下载失败
+20:49:11.209 I <75 · 下载 2426/2425/2443#> [ModNet] 已禁用的下载源：https://files.minecraftforge.net/maven/net/minecraftforge/forge/index_26.3_rc_3.html
+20:49:11.209 W <75 · 下载 2426/2425/2443#> [ModNet] 下载源禁用原因：错误码 NotFound (404)，https://files.minecraftforge.net/maven/net/minecraftforge/forge/index_26.3_rc_3.html
+20:49:11.209 W <75 · 下载 2426/2425/2443#> [ModNet]    在 PCL.ModNet.NetFile.Thread
+20:49:11.209 W <75 · 下载 2426/2425/2443#> [ModNet]    错误类型：MeloongCore.HttpRequestCodeException
+20:49:11.210 I <75 · 下载 2426/2425/2443#> [ModNet] download.txt：已失败，当前状态 Reading
+20:49:11.212 E <75 · 下载 2426/2425/2443#> [ModLoader] 加载器 LoaderDownload 源码获取 2424# 状态改变：Failed
+20:49:11.212 I <25 · Telemetry> [ModMain] 匿名数据上报：文件下载失败
+20:49:11.212 W <25 · Telemetry> [ModMain] 匿名数据上报失败：网络请求出现意外异常（GET, https://127.0.0.1:1__________________/track?topic_id=pcl-remote-1253424809&Event=%E6%96%87%E4%BB%B6%E4%B8%8B%E8%BD%BD%E5%A4%B1%E8%B4%A5&FileName=download.txt&Exception=%E9%94%99%E8%AF%AF%E7%A0%81%20NotFound%20%28404%29%EF%BC%8Chttps%3A%2F%2Ffiles.minecraftforge.net%2Fmaven%2Fnet%2Fminecraftforge%2Fforge%2Findex_26.3_rc_3.html%EF%BC%88https%3A%2F%2Ffiles.minecraftforge.net%2Fmaven%2Fnet%2Fminecraftforge%2Fforge%2Findex_26.3_rc_3.html%EF%BC%89）
+20:49:11.212 W <25 · Telemetry> [ModMain]    在 PCL.ModNet.SendRequest
+20:49:11.212 W <25 · Telemetry> [ModMain]    在 PCL.ModNet.NetRequestByClient
+20:49:11.212 W <25 · Telemetry> [ModMain]    在 PCL.ModMain._Closure$__78-0._Lambda$__0
+20:49:11.212 W <25 · Telemetry> [ModMain] → 无效的 URI: 指定的端口无效。
+20:49:11.212 W <25 · Telemetry> [ModMain]    在 System.Uri.CreateThis
+20:49:11.212 W <25 · Telemetry> [ModMain]    在 System.Net.Http.HttpRequestMessage..ctor
+20:49:11.212 W <25 · Telemetry> [ModMain]    在 PCL.ModNet.SendRequest
+20:49:11.212 W <25 · Telemetry> [ModMain]    错误类型：System.UriFormatException
+20:49:11.213 E <75 · 下载 2426/2425/2443#> [ModNet] 下载加载器失败：发生一个或多个错误。
+20:49:11.213 E <75 · 下载 2426/2425/2443#> [ModNet]    错误类型：System.AggregateException
+20:49:11.213 E <75 · 下载 2426/2425/2443#> [ModNet] → 错误码 NotFound (404)，https://files.minecraftforge.net/maven/net/minecraftforge/forge/index_26.3_rc_3.html
+20:49:11.213 E <75 · 下载 2426/2425/2443#> [ModNet]    在 PCL.ModNet.NetFile.Thread
+20:49:11.213 E <75 · 下载 2426/2425/2443#> [ModNet]    错误类型：MeloongCore.HttpRequestCodeException
+20:49:11.213 E <75 · 下载 2426/2425/2443#> [ModNet] → 错误码 NotFound (404)，https://files.minecraftforge.net/maven/net/minecraftforge/forge/index_26.3_rc_3.html
+20:49:11.213 E <75 · 下载 2426/2425/2443#> [ModNet]    在 PCL.ModNet.NetFile.Thread
+20:49:11.213 E <75 · 下载 2426/2425/2443#> [ModNet]    错误类型：MeloongCore.HttpRequestCodeException
+20:49:11.223 E <68 · L/DlForgeVersion Official> [ModLoader] 加载器 LoaderTask`2 DlForgeVersion Official 状态改变：Failed
+20:49:11.223 W <68 · L/DlForgeVersion Official> [ModLoader] 加载线程 DlForgeVersion Official 出错，已完成 100%：无
+20:49:11.223 W <68 · L/DlForgeVersion Official> [ModLoader]    在 PCL.ModDownload.DlForgeVersionOfficialMain
+20:49:11.223 W <68 · L/DlForgeVersion Official> [ModLoader]    在 PCL.ModLoader.LoaderTask`2._Closure$__13-0._Lambda$__0
+20:49:11.238 I <65 · L/DlForgeVersion 26.3-rc-3> [ModLoader] 加载器 LoaderTask`2 DlForgeVersion Bmclapi 状态改变：Loading
+20:49:11.239 I <76 · L/DlForgeVersion Bmclapi> [ModNet] 发起网络请求（GET，https://bmclapi2.bangbang93.com/forge/minecraft/26.3_rc_3），最大超时 10000
+20:49:11.353 E <76 · L/DlForgeVersion Bmclapi> [ModLoader] 加载器 LoaderTask`2 DlForgeVersion Bmclapi 状态改变：Failed
+20:49:11.353 W <76 · L/DlForgeVersion Bmclapi> [ModLoader] 加载线程 DlForgeVersion Bmclapi 出错，已完成 100%：无
+20:49:11.353 W <76 · L/DlForgeVersion Bmclapi> [ModLoader]    在 PCL.ModDownload.DlForgeVersionBmclapiMain
+20:49:11.353 W <76 · L/DlForgeVersion Bmclapi> [ModLoader]    在 PCL.ModLoader.LoaderTask`2._Closure$__13-0._Lambda$__0
+20:49:11.365 E <65 · L/DlForgeVersion 26.3-rc-3> [ModLoader] 加载器 LoaderTask`2 DlForgeVersion 26.3-rc-3 状态改变：Failed
+20:49:11.366 W <65 · L/DlForgeVersion 26.3-rc-3> [ModLoader] 加载线程 DlForgeVersion 26.3-rc-3 出错，已完成 100%：无
+20:49:11.366 W <65 · L/DlForgeVersion 26.3-rc-3> [ModLoader]    在 PCL.ModDownload.DlSourceLoader[InputType,OutputType]
+20:49:11.366 W <65 · L/DlForgeVersion 26.3-rc-3> [ModLoader]    在 PCL.ModDownload.DlForgeVersionMain
+20:49:11.366 W <65 · L/DlForgeVersion 26.3-rc-3> [ModLoader]    在 PCL.ModLoader.LoaderTask`2._Closure$__13-0._Lambda$__0
+20:49:11.386 I [MyCard] 展开卡片：Fabric
+20:49:12.527 I <66 · L/Fabric API List Loader> [ResourceVersion] 开始获取项目版本列表：fabric-api
+20:49:12.527 I <66 · L/Fabric API List Loader> [ModNet] 发起网络请求（GET，https://api.modrinth.com/v2/project/fabric-api/version?include_changelog=false），最大超时 20000
+20:49:14.321 I <66 · L/Fabric API List Loader> [ModLoader] 加载器 LoaderTask`2 Fabric API List Loader 状态改变：Finished
+20:49:16.511 I [MyIconButton] 按下图标按钮：BtnBack
+20:49:20.144 I [ModLoader] 加载器 LoaderTask`2 DlForgeVersion 26.4-snapshot-1 状态改变：Loading
+20:49:20.144 I [MyListItem] 按下单击列表项：26.4-snapshot-1
+20:49:20.144 I <68 · L/DlForgeVersion 26.4-snapshot-1> [ModLoader] 加载器 LoaderTask`2 DlForgeVersion Official 状态改变：Loading
+20:49:20.146 I <65 · L/DlForgeVersion Official> [ModLoader] 加载器 LoaderDownload 源码获取 2568# 状态改变：Loading
+20:49:20.162 I <44 · 下载 2570/2569/2573#> [ModNet] download.txt：开始，起始点 0，https://files.minecraftforge.net/maven/net/minecraftforge/forge/index_26.4_snapshot_1.html
+20:49:20.868 I <44 · 下载 2570/2569/2573#> [ModNet] download.txt：出错：错误码 NotFound (404)，https://files.minecraftforge.net/maven/net/minecraftforge/forge/index_26.4_snapshot_1.html
+20:49:20.868 I <44 · 下载 2570/2569/2573#> [ModNet]    在 PCL.ModNet.NetFile.Thread
+20:49:20.868 I <44 · 下载 2570/2569/2573#> [ModNet]    错误类型：MeloongCore.HttpRequestCodeException
+20:49:20.868 I <44 · 下载 2570/2569/2573#> [ModNet] download.txt：下载源被禁用（0，Range 问题：False）：https://files.minecraftforge.net/maven/net/minecraftforge/forge/index_26.4_snapshot_1.html
+20:49:20.868 W <44 · 下载 2570/2569/2573#> [ModNet] 下载源 0 已被禁用：错误码 NotFound (404)，https://files.minecraftforge.net/maven/net/minecraftforge/forge/index_26.4_snapshot_1.html
+20:49:20.868 W <44 · 下载 2570/2569/2573#> [ModNet]    在 PCL.ModNet.NetFile.Thread
+20:49:20.868 W <44 · 下载 2570/2569/2573#> [ModNet]    错误类型：MeloongCore.HttpRequestCodeException
+20:49:20.868 W <44 · 下载 2570/2569/2573#> [ModNet] download.txt：文件下载失败，正在自动重试……
+20:49:20.879 I <48 · 下载 2570/2569/2579#> [ModNet] download.txt：开始，起始点 0，https://files.minecraftforge.net/maven/net/minecraftforge/forge/index_26.4_snapshot_1.html
+20:49:21.587 I <48 · 下载 2570/2569/2579#> [ModNet] download.txt：出错：错误码 NotFound (404)，https://files.minecraftforge.net/maven/net/minecraftforge/forge/index_26.4_snapshot_1.html
+20:49:21.587 I <48 · 下载 2570/2569/2579#> [ModNet]    在 PCL.ModNet.NetFile.Thread
+20:49:21.587 I <48 · 下载 2570/2569/2579#> [ModNet]    错误类型：MeloongCore.HttpRequestCodeException
+20:49:21.587 I <48 · 下载 2570/2569/2579#> [ModNet] download.txt：下载源被禁用（0，Range 问题：False）：https://files.minecraftforge.net/maven/net/minecraftforge/forge/index_26.4_snapshot_1.html
+20:49:21.587 W <48 · 下载 2570/2569/2579#> [ModNet] 单线程下载源 0 已被禁用：错误码 NotFound (404)，https://files.minecraftforge.net/maven/net/minecraftforge/forge/index_26.4_snapshot_1.html
+20:49:21.587 W <48 · 下载 2570/2569/2579#> [ModNet]    在 PCL.ModNet.NetFile.Thread
+20:49:21.587 W <48 · 下载 2570/2569/2579#> [ModNet]    错误类型：MeloongCore.HttpRequestCodeException
+20:49:21.587 I <48 · 下载 2570/2569/2579#> [ModNet] download.txt：已无可用下载源，下载失败
+20:49:21.587 I <48 · 下载 2570/2569/2579#> [ModNet] 已禁用的下载源：https://files.minecraftforge.net/maven/net/minecraftforge/forge/index_26.4_snapshot_1.html
+20:49:21.587 W <48 · 下载 2570/2569/2579#> [ModNet] 下载源禁用原因：错误码 NotFound (404)，https://files.minecraftforge.net/maven/net/minecraftforge/forge/index_26.4_snapshot_1.html
+20:49:21.587 W <48 · 下载 2570/2569/2579#> [ModNet]    在 PCL.ModNet.NetFile.Thread
+20:49:21.587 W <48 · 下载 2570/2569/2579#> [ModNet]    错误类型：MeloongCore.HttpRequestCodeException
+20:49:21.587 I <48 · 下载 2570/2569/2579#> [ModNet] download.txt：已失败，当前状态 Reading
+20:49:21.587 E <48 · 下载 2570/2569/2579#> [ModLoader] 加载器 LoaderDownload 源码获取 2568# 状态改变：Failed
+20:49:21.587 I <44 · Telemetry> [ModMain] 匿名数据上报：文件下载失败
+20:49:21.587 E <48 · 下载 2570/2569/2579#> [ModNet] 下载加载器失败：发生一个或多个错误。
+20:49:21.587 E <48 · 下载 2570/2569/2579#> [ModNet]    错误类型：System.AggregateException
+20:49:21.587 E <48 · 下载 2570/2569/2579#> [ModNet] → 错误码 NotFound (404)，https://files.minecraftforge.net/maven/net/minecraftforge/forge/index_26.4_snapshot_1.html
+20:49:21.587 E <48 · 下载 2570/2569/2579#> [ModNet]    在 PCL.ModNet.NetFile.Thread
+20:49:21.587 E <48 · 下载 2570/2569/2579#> [ModNet]    错误类型：MeloongCore.HttpRequestCodeException
+20:49:21.587 E <48 · 下载 2570/2569/2579#> [ModNet] → 错误码 NotFound (404)，https://files.minecraftforge.net/maven/net/minecraftforge/forge/index_26.4_snapshot_1.html
+20:49:21.587 E <48 · 下载 2570/2569/2579#> [ModNet]    在 PCL.ModNet.NetFile.Thread
+20:49:21.587 E <48 · 下载 2570/2569/2579#> [ModNet]    错误类型：MeloongCore.HttpRequestCodeException
+20:49:21.587 W <44 · Telemetry> [ModMain] 匿名数据上报失败：网络请求出现意外异常（GET, https://127.0.0.1:1__________________/track?topic_id=pcl-remote-1253424809&Event=%E6%96%87%E4%BB%B6%E4%B8%8B%E8%BD%BD%E5%A4%B1%E8%B4%A5&FileName=download.txt&Exception=%E9%94%99%E8%AF%AF%E7%A0%81%20NotFound%20%28404%29%EF%BC%8Chttps%3A%2F%2Ffiles.minecraftforge.net%2Fmaven%2Fnet%2Fminecraftforge%2Fforge%2Findex_26.4_snapshot_1.html%EF%BC%88https%3A%2F%2Ffiles.minecraftforge.net%2Fmaven%2Fnet%2Fminecraftforge%2Fforge%2Findex_26.4_snapshot_1.html%EF%BC%89）
+20:49:21.587 W <44 · Telemetry> [ModMain]    在 PCL.ModNet.SendRequest
+20:49:21.587 W <44 · Telemetry> [ModMain]    在 PCL.ModNet.NetRequestByClient
+20:49:21.587 W <44 · Telemetry> [ModMain]    在 PCL.ModMain._Closure$__78-0._Lambda$__0
+20:49:21.587 W <44 · Telemetry> [ModMain] → 无效的 URI: 指定的端口无效。
+20:49:21.587 W <44 · Telemetry> [ModMain]    在 System.Uri.CreateThis
+20:49:21.587 W <44 · Telemetry> [ModMain]    在 System.Net.Http.HttpRequestMessage..ctor
+20:49:21.587 W <44 · Telemetry> [ModMain]    在 PCL.ModNet.SendRequest
+20:49:21.587 W <44 · Telemetry> [ModMain]    错误类型：System.UriFormatException
+20:49:21.593 E <65 · L/DlForgeVersion Official> [ModLoader] 加载器 LoaderTask`2 DlForgeVersion Official 状态改变：Failed
+20:49:21.593 W <65 · L/DlForgeVersion Official> [ModLoader] 加载线程 DlForgeVersion Official 出错，已完成 100%：无
+20:49:21.593 W <65 · L/DlForgeVersion Official> [ModLoader]    在 PCL.ModDownload.DlForgeVersionOfficialMain
+20:49:21.593 W <65 · L/DlForgeVersion Official> [ModLoader]    在 PCL.ModLoader.LoaderTask`2._Closure$__13-0._Lambda$__0
+20:49:21.610 I <68 · L/DlForgeVersion 26.4-snapshot-1> [ModLoader] 加载器 LoaderTask`2 DlForgeVersion Bmclapi 状态改变：Loading
+20:49:21.611 I <44 · L/DlForgeVersion Bmclapi> [ModNet] 发起网络请求（GET，https://bmclapi2.bangbang93.com/forge/minecraft/26.4_snapshot_1），最大超时 10000
+20:49:21.954 E <44 · L/DlForgeVersion Bmclapi> [ModLoader] 加载器 LoaderTask`2 DlForgeVersion Bmclapi 状态改变：Failed
+20:49:21.954 W <44 · L/DlForgeVersion Bmclapi> [ModLoader] 加载线程 DlForgeVersion Bmclapi 出错，已完成 100%：无
+20:49:21.954 W <44 · L/DlForgeVersion Bmclapi> [ModLoader]    在 PCL.ModDownload.DlForgeVersionBmclapiMain
+20:49:21.954 W <44 · L/DlForgeVersion Bmclapi> [ModLoader]    在 PCL.ModLoader.LoaderTask`2._Closure$__13-0._Lambda$__0
+20:49:21.968 E <68 · L/DlForgeVersion 26.4-snapshot-1> [ModLoader] 加载器 LoaderTask`2 DlForgeVersion 26.4-snapshot-1 状态改变：Failed
+20:49:21.968 W <68 · L/DlForgeVersion 26.4-snapshot-1> [ModLoader] 加载线程 DlForgeVersion 26.4-snapshot-1 出错，已完成 100%：无
+20:49:21.968 W <68 · L/DlForgeVersion 26.4-snapshot-1> [ModLoader]    在 PCL.ModDownload.DlSourceLoader[InputType,OutputType]
+20:49:21.968 W <68 · L/DlForgeVersion 26.4-snapshot-1> [ModLoader]    在 PCL.ModDownload.DlForgeVersionMain
+20:49:21.968 W <68 · L/DlForgeVersion 26.4-snapshot-1> [ModLoader]    在 PCL.ModLoader.LoaderTask`2._Closure$__13-0._Lambda$__0
+20:49:22.153 I [MyCard] 展开卡片：Fabric
+20:49:26.632 I [MyIconButton] 按下图标按钮：BtnBack
+20:49:27.626 I [ModLoader] 加载器 LoaderTask`2 DlForgeVersion 26.3 状态改变：Loading
+20:49:27.627 I [MyListItem] 按下单击列表项：26.3
+20:49:27.627 I <44 · L/DlForgeVersion 26.3> [ModLoader] 加载器 LoaderTask`2 DlForgeVersion Official 状态改变：Loading
+20:49:27.628 I <68 · L/DlForgeVersion Official> [ModLoader] 加载器 LoaderDownload 源码获取 2662# 状态改变：Loading
+20:49:27.635 I <38 · 下载 2664/2663/2667#> [ModNet] download.txt：开始，起始点 0，https://files.minecraftforge.net/maven/net/minecraftforge/forge/index_26.3.html
+20:49:28.349 I <38 · 下载 2664/2663/2667#> [ModNet] download.txt：文件大小未知
+20:49:28.364 I <38 · 下载 2664/2663/2667#> [ModNet] download.txt：已完成
+20:49:28.365 I <38 · 下载 2664/2663/2667#> [ModLoader] 加载器 LoaderDownload 源码获取 2662# 状态改变：Finished
+20:49:28.371 I <68 · L/DlForgeVersion Official> [ModLoader] 加载器 LoaderTask`2 DlForgeVersion Official 状态改变：Finished
+20:49:28.383 I <44 · L/DlForgeVersion 26.3> [ModLoader] 加载器 LoaderTask`2 DlForgeVersion 26.3 状态改变：Finished
+20:49:29.078 I [MyCard] 展开卡片：Forge
+20:49:32.051 I [MyCard] 展开卡片：NeoForge
+20:49:35.881 I [MyCard] 展开卡片：Fabric
+20:49:36.895 I [ModAnimation] FPS 0, 动画 34, 下载中 0（0 B/s）
+20:49:48.670 I [MyIconButton] 按下图标按钮：BtnBack
+20:49:50.321 I [ModAnimation] FPS 0, 动画 27, 下载中 0（0 B/s）
+20:49:56.397 I [MyCard] 展开卡片：正式版
+20:49:58.908 I [ModLoader] 加载器 LoaderTask`2 DlForgeVersion 1.21.11 状态改变：Loading
+20:49:58.909 I [MyListItem] 按下单击列表项：1.21.11
+20:49:58.909 I <25 · L/DlForgeVersion 1.21.11> [ModLoader] 加载器 LoaderTask`2 DlForgeVersion Official 状态改变：Loading
+20:49:58.910 I <69 · L/DlForgeVersion Official> [ModLoader] 加载器 LoaderDownload 源码获取 4578# 状态改变：Loading
+20:49:58.914 I <46 · 下载 4581/4579/4584#> [ModNet] download.txt：开始，起始点 0，https://files.minecraftforge.net/maven/net/minecraftforge/forge/index_1.21.11.html
+20:49:59.629 I <46 · 下载 4581/4579/4584#> [ModNet] download.txt：文件大小未知
+20:50:00.605 I [MyCard] 展开卡片：OptiFine
+20:50:00.707 I <46 · 下载 4581/4579/4584#> [ModNet] download.txt：已完成
+20:50:00.707 I <46 · 下载 4581/4579/4584#> [ModLoader] 加载器 LoaderDownload 源码获取 4578# 状态改变：Finished
+20:50:00.720 I <69 · L/DlForgeVersion Official> [ModLoader] 加载器 LoaderTask`2 DlForgeVersion Official 状态改变：Finished
+20:50:00.726 I <25 · L/DlForgeVersion 1.21.11> [ModLoader] 加载器 LoaderTask`2 DlForgeVersion 1.21.11 状态改变：Finished
+20:50:07.191 I [MyCard] 展开卡片：Forge
+20:50:11.032 I [ModAnimation] FPS 0, 动画 51, 下载中 0（0 B/s）
+20:50:14.304 I [MyRadioButton] 按下单选按钮：启动
+20:50:14.304 I [FormMain] 切换主要页面：Launch, -1
+20:50:18.216 I [MyButton] 按下按钮：版本选择
+20:50:18.222 I [FormMain] 切换主要页面：InstanceSelect, OtherHelp
+20:50:18.343 I [ModLoader] 加载器 LoaderTask`2 Minecraft Instance List 状态改变：Loading
+20:50:18.343 I [PageLaunchLeft] 启动按钮：正在加载 Minecraft 版本
+20:50:18.347 I <44 · L/Minecraft Instance List> [ModMinecraft] 文件夹列表变更，重载所有版本
+20:50:18.381 I [PageSelectLeft] 有效的 Minecraft 文件夹：Desktop > D:\Desktop\.minecraft\
+20:50:25.406 I <44 · L/Minecraft Instance List> [ModMinecraft] 当前选择的 Minecraft 版本：D:\Desktop\.minecraft\versions\1.20.1-Fabric1\
+20:50:25.406 I <44 · L/Minecraft Instance List> [ModMinecraft] 选择该文件夹储存的 Minecraft 版本：D:\Desktop\.minecraft\versions\1.20.1-Fabric1\
+20:50:25.448 I <44 · L/Minecraft Instance List> [ModLoader] 加载器 LoaderTask`2 Minecraft Instance List 状态改变：Finished
+20:50:40.590 I [MyCard] 展开卡片：不常用版本 (3)
+20:50:42.945 I [ModMinecraft] 当前选择的 Minecraft 版本：D:\Desktop\.minecraft\versions\rd-132211\
+20:50:42.945 I [FormMain] 切换主要页面：Launch, -1
+20:50:42.945 I [MyListItem] 按下单击列表项：
+20:50:43.069 I [PageLaunchLeft] 启动按钮：Minecraft 版本：D:\Desktop\.minecraft\versions\rd-132211\
+20:50:47.031 I [MyRadioButton] 按下单选按钮：下载
+20:50:47.032 I [FormMain] 切换主要页面：Download, -1
+20:50:50.255 I [MyCard] 折叠卡片：正式版
+20:50:50.965 I [MyCard] 折叠卡片：最新版本
+20:50:52.098 I [MyCard] 折叠卡片：预览版
+20:50:53.537 I [MyCard] 展开卡片：远古版
+20:51:08.165 I [MyCard] 展开卡片：预览版
+20:51:22.411 I [ModLoader] 加载器 LoaderTask`2 DlForgeVersion 1.12-pre5 状态改变：Loading
+20:51:22.414 I [MyListItem] 按下单击列表项：1.12-pre5
+20:51:22.414 I <73 · L/DlForgeVersion 1.12-pre5> [ModLoader] 加载器 LoaderTask`2 DlForgeVersion Official 状态改变：Loading
+20:51:22.415 I <64 · L/DlForgeVersion Official> [ModLoader] 加载器 LoaderDownload 源码获取 9048# 状态改变：Loading
+20:51:22.438 I <62 · 下载 9050/9049/9053#> [ModNet] download.txt：开始，起始点 0，https://files.minecraftforge.net/maven/net/minecraftforge/forge/index_1.12_pre5.html
+20:51:23.137 I <62 · 下载 9050/9049/9053#> [ModNet] download.txt：出错：错误码 NotFound (404)，https://files.minecraftforge.net/maven/net/minecraftforge/forge/index_1.12_pre5.html
+20:51:23.137 I <62 · 下载 9050/9049/9053#> [ModNet]    在 PCL.ModNet.NetFile.Thread
+20:51:23.137 I <62 · 下载 9050/9049/9053#> [ModNet]    错误类型：MeloongCore.HttpRequestCodeException
+20:51:23.137 I <62 · 下载 9050/9049/9053#> [ModNet] download.txt：下载源被禁用（0，Range 问题：False）：https://files.minecraftforge.net/maven/net/minecraftforge/forge/index_1.12_pre5.html
+20:51:23.137 W <62 · 下载 9050/9049/9053#> [ModNet] 下载源 0 已被禁用：错误码 NotFound (404)，https://files.minecraftforge.net/maven/net/minecraftforge/forge/index_1.12_pre5.html
+20:51:23.137 W <62 · 下载 9050/9049/9053#> [ModNet]    在 PCL.ModNet.NetFile.Thread
+20:51:23.137 W <62 · 下载 9050/9049/9053#> [ModNet]    错误类型：MeloongCore.HttpRequestCodeException
+20:51:23.137 W <62 · 下载 9050/9049/9053#> [ModNet] download.txt：文件下载失败，正在自动重试……
+20:51:23.152 I <59 · 下载 9050/9049/9058#> [ModNet] download.txt：开始，起始点 0，https://files.minecraftforge.net/maven/net/minecraftforge/forge/index_1.12_pre5.html
+20:51:23.854 I <59 · 下载 9050/9049/9058#> [ModNet] download.txt：出错：错误码 NotFound (404)，https://files.minecraftforge.net/maven/net/minecraftforge/forge/index_1.12_pre5.html
+20:51:23.854 I <59 · 下载 9050/9049/9058#> [ModNet]    在 PCL.ModNet.NetFile.Thread
+20:51:23.854 I <59 · 下载 9050/9049/9058#> [ModNet]    错误类型：MeloongCore.HttpRequestCodeException
+20:51:23.854 I <59 · 下载 9050/9049/9058#> [ModNet] download.txt：下载源被禁用（0，Range 问题：False）：https://files.minecraftforge.net/maven/net/minecraftforge/forge/index_1.12_pre5.html
+20:51:23.854 W <59 · 下载 9050/9049/9058#> [ModNet] 单线程下载源 0 已被禁用：错误码 NotFound (404)，https://files.minecraftforge.net/maven/net/minecraftforge/forge/index_1.12_pre5.html
+20:51:23.854 W <59 · 下载 9050/9049/9058#> [ModNet]    在 PCL.ModNet.NetFile.Thread
+20:51:23.854 W <59 · 下载 9050/9049/9058#> [ModNet]    错误类型：MeloongCore.HttpRequestCodeException
+20:51:23.854 I <59 · 下载 9050/9049/9058#> [ModNet] download.txt：已无可用下载源，下载失败
+20:51:23.854 I <59 · 下载 9050/9049/9058#> [ModNet] 已禁用的下载源：https://files.minecraftforge.net/maven/net/minecraftforge/forge/index_1.12_pre5.html
+20:51:23.854 W <59 · 下载 9050/9049/9058#> [ModNet] 下载源禁用原因：错误码 NotFound (404)，https://files.minecraftforge.net/maven/net/minecraftforge/forge/index_1.12_pre5.html
+20:51:23.854 W <59 · 下载 9050/9049/9058#> [ModNet]    在 PCL.ModNet.NetFile.Thread
+20:51:23.854 W <59 · 下载 9050/9049/9058#> [ModNet]    错误类型：MeloongCore.HttpRequestCodeException
+20:51:23.854 I <59 · 下载 9050/9049/9058#> [ModNet] download.txt：已失败，当前状态 Reading
+20:51:23.854 E <59 · 下载 9050/9049/9058#> [ModLoader] 加载器 LoaderDownload 源码获取 9048# 状态改变：Failed
+20:51:23.854 I <58 · Telemetry> [ModMain] 匿名数据上报：文件下载失败
+20:51:23.854 E <59 · 下载 9050/9049/9058#> [ModNet] 下载加载器失败：发生一个或多个错误。
+20:51:23.854 E <59 · 下载 9050/9049/9058#> [ModNet]    错误类型：System.AggregateException
+20:51:23.854 E <59 · 下载 9050/9049/9058#> [ModNet] → 错误码 NotFound (404)，https://files.minecraftforge.net/maven/net/minecraftforge/forge/index_1.12_pre5.html
+20:51:23.854 E <59 · 下载 9050/9049/9058#> [ModNet]    在 PCL.ModNet.NetFile.Thread
+20:51:23.854 E <59 · 下载 9050/9049/9058#> [ModNet]    错误类型：MeloongCore.HttpRequestCodeException
+20:51:23.854 E <59 · 下载 9050/9049/9058#> [ModNet] → 错误码 NotFound (404)，https://files.minecraftforge.net/maven/net/minecraftforge/forge/index_1.12_pre5.html
+20:51:23.854 E <59 · 下载 9050/9049/9058#> [ModNet]    在 PCL.ModNet.NetFile.Thread
+20:51:23.854 E <59 · 下载 9050/9049/9058#> [ModNet]    错误类型：MeloongCore.HttpRequestCodeException
+20:51:23.854 W <58 · Telemetry> [ModMain] 匿名数据上报失败：网络请求出现意外异常（GET, https://127.0.0.1:1__________________/track?topic_id=pcl-remote-1253424809&Event=%E6%96%87%E4%BB%B6%E4%B8%8B%E8%BD%BD%E5%A4%B1%E8%B4%A5&FileName=download.txt&Exception=%E9%94%99%E8%AF%AF%E7%A0%81%20NotFound%20%28404%29%EF%BC%8Chttps%3A%2F%2Ffiles.minecraftforge.net%2Fmaven%2Fnet%2Fminecraftforge%2Fforge%2Findex_1.12_pre5.html%EF%BC%88https%3A%2F%2Ffiles.minecraftforge.net%2Fmaven%2Fnet%2Fminecraftforge%2Fforge%2Findex_1.12_pre5.html%EF%BC%89）
+20:51:23.854 W <58 · Telemetry> [ModMain]    在 PCL.ModNet.SendRequest
+20:51:23.854 W <58 · Telemetry> [ModMain]    在 PCL.ModNet.NetRequestByClient
+20:51:23.854 W <58 · Telemetry> [ModMain]    在 PCL.ModMain._Closure$__78-0._Lambda$__0
+20:51:23.854 W <58 · Telemetry> [ModMain] → 无效的 URI: 指定的端口无效。
+20:51:23.854 W <58 · Telemetry> [ModMain]    在 System.Uri.CreateThis
+20:51:23.854 W <58 · Telemetry> [ModMain]    在 System.Net.Http.HttpRequestMessage..ctor
+20:51:23.854 W <58 · Telemetry> [ModMain]    在 PCL.ModNet.SendRequest
+20:51:23.854 W <58 · Telemetry> [ModMain]    错误类型：System.UriFormatException
+20:51:23.856 E <64 · L/DlForgeVersion Official> [ModLoader] 加载器 LoaderTask`2 DlForgeVersion Official 状态改变：Failed
+20:51:23.856 W <64 · L/DlForgeVersion Official> [ModLoader] 加载线程 DlForgeVersion Official 出错，已完成 100%：无
+20:51:23.856 W <64 · L/DlForgeVersion Official> [ModLoader]    在 PCL.ModDownload.DlForgeVersionOfficialMain
+20:51:23.856 W <64 · L/DlForgeVersion Official> [ModLoader]    在 PCL.ModLoader.LoaderTask`2._Closure$__13-0._Lambda$__0
+20:51:23.871 I <73 · L/DlForgeVersion 1.12-pre5> [ModLoader] 加载器 LoaderTask`2 DlForgeVersion Bmclapi 状态改变：Loading
+20:51:23.871 I <57 · L/DlForgeVersion Bmclapi> [ModNet] 发起网络请求（GET，https://bmclapi2.bangbang93.com/forge/minecraft/1.12_pre5），最大超时 10000
+20:51:24.350 E <57 · L/DlForgeVersion Bmclapi> [ModLoader] 加载器 LoaderTask`2 DlForgeVersion Bmclapi 状态改变：Failed
+20:51:24.351 W <57 · L/DlForgeVersion Bmclapi> [ModLoader] 加载线程 DlForgeVersion Bmclapi 出错，已完成 100%：无
+20:51:24.351 W <57 · L/DlForgeVersion Bmclapi> [ModLoader]    在 PCL.ModDownload.DlForgeVersionBmclapiMain
+20:51:24.351 W <57 · L/DlForgeVersion Bmclapi> [ModLoader]    在 PCL.ModLoader.LoaderTask`2._Closure$__13-0._Lambda$__0
+20:51:24.354 E <73 · L/DlForgeVersion 1.12-pre5> [ModLoader] 加载器 LoaderTask`2 DlForgeVersion 1.12-pre5 状态改变：Failed
+20:51:24.354 W <73 · L/DlForgeVersion 1.12-pre5> [ModLoader] 加载线程 DlForgeVersion 1.12-pre5 出错，已完成 100%：无
+20:51:24.354 W <73 · L/DlForgeVersion 1.12-pre5> [ModLoader]    在 PCL.ModDownload.DlSourceLoader[InputType,OutputType]
+20:51:24.354 W <73 · L/DlForgeVersion 1.12-pre5> [ModLoader]    在 PCL.ModDownload.DlForgeVersionMain
+20:51:24.354 W <73 · L/DlForgeVersion 1.12-pre5> [ModLoader]    在 PCL.ModLoader.LoaderTask`2._Closure$__13-0._Lambda$__0
+20:51:27.818 I [MyIconButton] 按下图标按钮：BtnBack
+20:51:28.480 I [MyRadioButton] 按下单选按钮：启动
+20:51:28.482 I [FormMain] 切换主要页面：Launch, -1
+20:51:30.181 I [MyRadioButton] 按下单选按钮：离线
+20:51:30.292 I [ModLoader] 加载器 LoaderTask`2 Loader Skin Legacy 状态改变：Loading
+20:51:30.292 I <62 · L/Loader Skin Legacy> [ModLoader] 加载器 LoaderTask`2 Loader Skin Legacy 状态改变：Finished
+20:51:30.294 I [MySkin] 载入头像成功：Loader Skin Legacy
+20:51:30.860 I [MyRadioButton] 按下单选按钮：正版
+20:51:31.450 I [MyRadioButton] 按下单选按钮：离线
+20:51:31.590 I [MyRadioButton] 按下单选按钮：正版
+20:51:31.710 I [MyRadioButton] 按下单选按钮：离线
+20:51:31.850 I [MyRadioButton] 按下单选按钮：正版
+20:51:32.372 I [MyRadioButton] 按下单选按钮：离线
+20:51:32.492 I [MyRadioButton] 按下单选按钮：正版
+20:51:32.795 I [MyRadioButton] 按下单选按钮：离线
+20:51:32.854 I [MyRadioButton] 按下单选按钮：正版
+20:51:32.955 I [MyRadioButton] 按下单选按钮：离线
+20:51:33.034 I [MyRadioButton] 按下单选按钮：正版
+20:51:33.076 I [MyRadioButton] 按下单选按钮：离线
+20:51:34.087 I [MyIconButton] 按下图标按钮：BtnTitleClose
+20:51:34.089 I [FormMain] 收到关闭指令
+20:51:34.309 I [FormMain] 程序已退出，返回值：Success
